@@ -1,5 +1,8 @@
 #include "HX711.h"
 
+// Please be aware, that for this code setup to work, the two magnets used for sensing the orientation of the flywheel 
+// need to have opposing polarity poles facing the hall effect sensor.
+
 // user constants
 #define LEVER_LENGTH_MILLIS 30 // prony break level arm length in millimeters... needs to be changed if distance is different. 
 #define DATA_INTERVAL_MILLIS 100ul // how often to query load cell and send a sample of data to serial. 100 milliseconds seems to work fine.
